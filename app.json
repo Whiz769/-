@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-bot (DIABLO-BOT)",
+  "description": "Whatsapp bot.",
+  "keywords": ["whatsapp bot"],
+  "logo": "https://telegra.ph/file/c5aee23bb237b912ca6bf.jpg",
+  "repository": "https://github.com/SharkYTB/DIABLO-BOT",
+  "stack": "container",
+  "env": {
+     "DK3MK": {
+      "description": "diablo bot",
+      "required": false,
+      "value": "SharkYTB"
+    }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
